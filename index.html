@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alumni Network</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .menu-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 24px;
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      right: 20px;
+      top: 50px;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+    .dropdown-menu a {
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+      color: black;
+    }
+    .dropdown-menu a:hover {
+      background-color: #f0f0f0;
+    }
+    form {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    form h2 {
+      margin-bottom: 15px;
+    }
+    form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      padding: 10px 20px;
+      background-color: #0056b3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #004095;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><strong>Welcome to CBIT Alumni Network</strong></h1><br>
+    <h4>Meet | Greet | Connect | Grow</h4>    
+    <div class="menu-toggle" onclick="toggleMenu()">⋮</div>
+    <div id="dropdown" class="dropdown-menu">
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#alumni">Alumni</a>
+    <a href="#events">Events</a>
+    <a href="activities.html">Activities</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <h2>About the Network</h2>
+      <p>Established in 1979, Chaitanya Bharathi Institute of Technology, Gandipet, is one of the early private engineering colleges in India. Over the years we have given to society a huge number of developers, actors, politicians, and civil servants. Now it's time to connect to our roots, trace their journeys, and grow together as a community.</p>
+    </section>
+
+    <section id="alumni">
+      <h2>Notable Alumni</h2>
+      <div class="alumni-scroll">
+        <div class="alumni-card">
+          <img src="ysc.jpg" alt="YSC">
+          <h3>Yalamanchili Satyanarayana Chowdary</h3>
+          <p>Member of Parliament (Rajya Sabha)<br>Year of graduation - 2010</p>
+        </div>
+        <div class="alumni-card">
+          <img src="Shekhar_Kammula.jpg" alt="SK">
+          <h3>Shekhar Kammula</h3>
+          <p>Film Director<br>Year of graduation - 1991</p>
+        </div>
+        <div class="alumni-card">
+          <img src="JDC.jpg" alt="JDC">
+          <h3>Nagulapati Srinivasa Chakravarthy</h3>
+          <p>Film Actor<br>Year of graduation - 1991</p>
+        </div>
+        <div class="alumni-card">
+          <img src="KVR.jpg" alt="KVR">
+          <h3>Komatireddy Venkat Reddy</h3>
+          <p>Politician<br>Year of graduation - ''</p>
+        </div>
+        <div class="alumni-card">
+          <img src="NG.jpg" alt="NG">
+          <h3>Neeraj Ghaywan</h3>
+          <p>Film Actor (Bollywood)<br>Year of graduation - ''</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <div class="event-scroll" id="event-scroll">
+        <div class="event-card">Alumni Meet 2025 - June 15th, Online</div>
+        <div class="event-card">Career Networking Night - August 10th, Online</div>
+        <div class="event-card">Tech Conference 2025 - September 20th, San Francisco</div>
+        <div class="event-card">CBIT Alumni Awards - October 5th, Hyderabad</div>
+        <div class="event-card">Career Opportunities - October 9th, Hyderabad</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>✉️ Email: <a href="mailto:alumni@college.edu">alumni@college.edu</a></p>
+      <p>📞 Phone: <a href="tel:+11234567890">+1 123 456 7890</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Alumni Network. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('dropdown');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
