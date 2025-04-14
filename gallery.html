@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - CBIT Alumni</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery-container {
+    background-color: aliceblue;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 40px;
+    }
+    .gallery-container img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery-container img:hover {
+      transform: scale(1.05);
+    }
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gallery</h1>
+  </header>
+
+  <div class="gallery-container">
+    <img src="alm-2.jpeg" alt="Alumni Meet">
+    <img src="alm-3.jpeg" alt="Networking Night">
+    <img src="alm-1.jpeg" alt="Award Ceremony">
+    <img src="alm-4.jpeg" alt="Panel Discussion">
+    <img src="alm-5.jpeg" alt="CBIT Campus">
+  </div>
+
+  <footer>
+    <p>&copy; 2025 CBIT Alumni Network</p>
+  </footer>
+</body>
+</html>

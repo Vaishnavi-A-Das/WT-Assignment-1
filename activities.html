@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activities - CBIT Alumni</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .testimonial-box {
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 300px;
+    }
+    .testimonial-box p {
+      font-style: italic;
+    }
+    .registration-section {
+      background-color: #f0f8ff;
+      padding: 30px;
+      max-width: 600px;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .registration-section form {
+      display: flex;
+      flex-direction: column;
+    }
+    .registration-section label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .registration-section input,
+    .registration-section select,
+    .registration-section textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .registration-section button {
+      background-color: #003366;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .registration-section button:hover {
+      background-color: #0055aa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Share your Stories!</h1>
+  </header>
+
+  <div class="testimonials">
+    <div class="testimonial-box">
+      <p>"My time at CBIT shaped my career and friendships that last a lifetime."</p>
+      <strong>- Alumni A</strong>
+    </div>
+    <div class="testimonial-box">
+      <p>"Joining the alumni mentor program helped me give back to the community!"</p>
+      <strong>- Alumni B</strong>
+    </div>
+    <div class="testimonial-box">
+      <p>"Events helped me reconnect with batchmates and grow professionally."</p>
+      <strong>- Alumni C</strong>
+    </div>
+  </div>
+
+  <div class="registration-section">
+    <h2>Register as Mentor / Seek Mentorship</h2>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="role">I want to:</label>
+      <select id="role" name="role" required>
+        <option value="">-- Select --</option>
+        <option value="mentor">Volunteer as a Mentor</option>
+        <option value="mentee">Seek Mentorship</option>
+      </select>
+
+      <label for="message">Message / Experience / Area of Interest:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <footer>
+    <p style="text-align:center">&copy; 2025 CBIT Alumni Network</p>
+  </footer>
+</body>
+</html>
